@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" href="https://www.apple.com/fr/" hreflang="fr-FR">
+    <link rel="alternate" href="https://www.apple.com/" hreflang="en-US">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Ged.png">
+    <!--La police d'écriture-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Epiphane-Gédéon POULI</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="Images/Ged.png", alt="Logo DigiComm Group"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class = "navbar" >
+            <ul class="menu">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">A propos</a></li> 
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-Accueil">
+            <div class="info">
+                <h1>Epiphane-Gédéon POULI</h1>
+                <h2>Développeur Web et mobile en formation</h2>
+            </div>
+            <div class="photo">
+                <img src="Images/ged.png" alt="Photo de Gédéon">
+            </div>
+        </section>
+    </main>
+</body>
+<style>
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+    .menu{
+        display: flex;
+        list-style: none;
+    }
+    .menu li{
+        margin-left: 20px;
+    }
+    .menu li a{
+        text-decoration: none;
+        color: var(--TextClair);
+    }
+    
+    .logo img{
+        height: 3rem;
+        border-radius: 50%;
+    }
+    /*Responsive header*/
+    @media (max-width: 1024px) {
+                
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .hamburger .line {
+            width: 25px;
+            height: 3px;
+            background-color: var(--TextClair);
+            margin: 5px;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+        .navbar {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background: var(--BackgroundSombre);
+            transition: 0.2s;
+            height: 0;
+        }
+        .menu{
+            display: block;
+            width: fit-content;
+            margin: 80px auto 0 auto;
+            text-align: center;
+            display: none;
+        }
+        .menu li {
+            margin-bottom: var(--space-neutral);
+            width: 100%;
+        }
+        .menu li a {
+            color: var(--TextSombre);
+            text-decoration: none;
+            font-size: var(--font-size-large);
+            font-weight: bold;
+        }
+        .navbar.active {
+            height: 100vw;
+        }
+        .navbar.active .menu {
+            display: block;
+        }
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199.98px) { 
+        /* Styles pour large devices */
+        .menu li{
+            margin-left: var(--space-medium);
+        } 
+    }
+    
+    @media (min-width: 1200px) and (max-width: 1399.98px) { 
+        /* Styles pour extra large devices */
+        .menu li{
+            margin-left: var(--space-medium);
+        }                
+    }
+    
+    @media (min-width: 1400px) { 
+        /* Styles pour extra extra large devices */
+        .menu li{
+            margin-left: var(--space-x-large);
+        }
+    }
+
+    .section-Accueil{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--TextClair);
+    }
+    .section-Accueil .info h1{
+        font-size: 50px;
+    }
+    .section-Accueil .info h2{
+        font-size: 30px;
+    }
+    .photo img{
+        width: 450px;
+        border-radius: 50%;
+    }
+</style>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.onclick= function(){
+        navBar = document.querySelector('.navbar');
+        navBar.classList.toggle('active');
+       console.log('click');
+    }
+</script>
+</html>
