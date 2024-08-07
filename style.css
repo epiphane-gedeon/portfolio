@@ -57,7 +57,7 @@ h4 {
     --BackgroundClair: #FBFDFF;
     --CouleurBouton: #0090FF;
     --TexteBouton: #F4FAFF;
-    --CouleurBoutonTrensparent: #8EC8F6;
+    --CouleurBoutonTrensparent: rgba(142,200,246,0.16);
     --TexteBoutonTrensparentClair: #113264;
     --TexteBoutonTrensparentSombre: #C2E6FF;
     --CouleursCartesSombre: #0D2847;
@@ -101,6 +101,36 @@ body{
     background-color: var(--BackgroundClair);
     color: var(--TexteClair);
     font-family: var(--font-family);
-    margin:  0 var(--space-large) 0 var(--space-large);
+    /* margin:  0 var(--space-large) 0 var(--space-large); */
     padding: 0;
+}
+
+main{
+    margin: var(--space-large)
+}
+
+.boutons {
+    display: flex;
+    gap: 1rem;
+}
+.bouton {
+    background-color: var(--CouleurBouton);
+    color: var(--TexteBouton);
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+.bouton-transparent{
+    background-color: var(--CouleurBoutonTrensparent);
+    color: var(--TexteBoutonTrensparentClair);
+    border: 2px solid var(--CouleurBordureClair);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

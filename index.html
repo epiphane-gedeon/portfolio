@@ -36,8 +36,19 @@
     <main>
         <section class="section-Accueil">
             <div class="info">
-                <h1>Epiphane-Gédéon POULI</h1>
-                <h2>Développeur Web et mobile en formation</h2>
+                <div class="text">
+                    <h1>Epiphane-Gédéon POULI</h1>
+                    <h2>Développeur Web et mobile en formation</h2>
+                </div>
+                <div class="boutons">
+                    <a href="" class="bouton">Github</a>
+                    <a href="" class="bouton">LinkedIn</a>
+                    <a href="" class="bouton">Instagram</a>
+                </div>
+                <div class="boutons">
+                    <a href="" class="bouton">egpouli@outlook.com</a>
+                    <a href="" class="bouton bouton-transparent">Télecharger mon CV</a>
+                </div>
             </div>
             <div class="photo">
                 <img src="Images/ged.png" alt="Photo de Gédéon">
@@ -51,6 +62,8 @@
         justify-content: space-between;
         align-items: center;
         height: 80px;
+        border-bottom: var(--CouleurBordureClair) 1px solid;
+        padding: 0 var(--space-large);
     }
     .menu{
         display: flex;
@@ -153,7 +166,7 @@
         font-size: 30px;
     }
     .photo img{
-        width: 450px;
+        width: 100%;
         border-radius: 50%;
     }
 </style>
