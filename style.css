@@ -66,6 +66,7 @@ h4 {
     --CouleurBordureClair: #8EC8F6;
     --CouleurInputSombre: #0D2847;
     --CouleurInputClair: #F4FAFF;
+    --CouleurFooterClair: #E6F4FE;
     --TextClair: #113264;
     --TextSombre: #C2E6FF;
 
@@ -105,10 +106,130 @@ body{
     padding: 0;
 }
 
-main{
+section{
     margin: var(--space-large)
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: var(--CouleurBordureClair) 1px solid;
+    padding: 0 var(--space-large);
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu li a{
+    text-decoration: none;
+    color: var(--TextClair);
+}
+
+.logo img{
+    height: 3rem;
+    border-radius: 50%;
+}
+/*Responsive header*/
+@media (max-width: 1024px) {
+            
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .hamburger .line {
+        width: 25px;
+        height: 3px;
+        background-color: var(--TextClair);
+        margin: 5px;
+        transition: all 0.3s;
+        border-radius: 5px;
+    }
+    .navbar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--BackgroundSombre);
+        transition: 0.2s;
+        height: 0;
+    }
+    .menu{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        display: none;
+    }
+    .menu li {
+        margin-bottom: var(--space-neutral);
+        width: 100%;
+    }
+    .menu li a {
+        color: var(--TextSombre);
+        text-decoration: none;
+        font-size: var(--font-size-large);
+        font-weight: bold;
+    }
+    .navbar.active {
+        height: 100vw;
+    }
+    .navbar.active .menu {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    /* Styles pour large devices */
+    .menu li{
+        margin-left: var(--space-medium);
+    } 
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    /* Styles pour extra large devices */
+    .menu li{
+        margin-left: var(--space-medium);
+    }                
+}
+
+@media (min-width: 1400px) { 
+    /* Styles pour extra extra large devices */
+    .menu li{
+        margin-left: var(--space-x-large);
+    }
+}
+
+.section-Accueil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--TextClair);
+}
+.section-Accueil .info h1{
+    font-size: 50px;
+}
+.section-Accueil .info h2{
+    font-size: 30px;
+}
+.photo img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.icon path{
+    fill: var(--TexteBouton);
+}
 .boutons {
     display: flex;
     gap: 1rem;
@@ -121,8 +242,11 @@ main{
     font-size: 1.5rem;
     border-radius: 2rem;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
     text-decoration: none;
+}
+.bouton-text{
+    display: flex;
+    gap: 0.25rem;
 }
 .bouton-transparent{
     background-color: var(--CouleurBoutonTrensparent);
@@ -133,4 +257,166 @@ main{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+.skills h1 span{
+    font-size: var(--font-size-xxx-large);
+}
+.skill-type h1{
+    font-size: var(--font-size-x-large);
+}
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+}
+.skill {
+    display: flex;
+    align-items: center;
+}
+.skill .icon path{
+    fill: var(--TexteClair);
+}
+
+footer{
+    border-top: var(--CouleurBordureClair) 1px solid;
+}
+.footer-logo img{
+    width: 100px;
+    border-radius: 50%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--space-medium);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.item {
+    background-color: var(--CouleurBouton);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item .icon{
+    width: 60px;
+    height: 60px;
+}
+.footer-bottom{
+    text-align: center;
+    background-color: var(--CouleurFooterClair);
+    border-top: var(--CouleurBordureClair) 1px solid;
+    padding: var(--space-medium);
+}
+
+/*Responsive section-Accueil*/
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 766.99px) {
+    main{
+        margin: var(--space-small)
+    }
+    .section-Accueil{
+        flex-direction: column-reverse;
+    }
+    .section-Accueil .info h1{
+        font-size: 20px;
+    }
+    .section-Accueil .info h2{
+        font-size: 15px;
+    }
+    .boutons {
+        gap: 0.8rem;
+        justify-content: space-between;
+    }
+    .bouton {
+        padding: 0.5rem 1.25rem;
+        font-size: var(--font-size-x-small);
+    }
+    .bouton-transparent{
+        border: 2px solid var(--CouleurBordureClair);
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .icon{
+        width: 15px;
+        height: 15px;
+    }
+    .bouton-text{
+        gap: 0.125rem;
+    }
+}
+
+/*Tablette*/
+@media (min-width: 768px) and (max-width: 1439px) {
+    main{
+        margin: var(--space-small)
+    }
+    .section-Accueil{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--TextClair);
+    }
+    .section-Accueil .info h1{
+        font-size: 50px;
+    }
+    .section-Accueil .info h2{
+        font-size: 30px;
+    }
+    .photo img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .icon path{
+        fill: var(--TexteBouton);
+    }
+    .boutons {
+        display: flex;
+        gap: 1rem;
+    }
+    .bouton {
+        background-color: var(--CouleurBouton);
+        color: var(--TexteBouton);
+        border: none;
+        padding: 0.5rem 2rem;
+        font-size: 1.5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .bouton-text{
+        display: flex;
+        gap: 0.25rem;
+    }
+    .bouton-transparent{
+        background-color: var(--CouleurBoutonTrensparent);
+        color: var(--TexteBoutonTrensparentClair);
+        border: 2px solid var(--CouleurBordureClair);
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
