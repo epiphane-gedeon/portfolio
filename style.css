@@ -259,7 +259,7 @@ header{
 
 .section-Accueil{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: var(--TextClair);
     margin-top: 7rem;
@@ -270,6 +270,7 @@ header{
 .section-Accueil .info h2{
     font-size: 30px;
 }
+
 .photo img{
     width: 100%;
     border-radius: 50%;
@@ -327,15 +328,12 @@ header{
 .skills h1{
     font-size: var(--font-size-xxx-large);
 }
-.skills h1 span{
-    font-size: var(--font-size-xxx-small);
-}
 .skill-type h1{
     font-size: var(--font-size-x-large);
 }
 .skills-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .skill {
     display: flex;
@@ -373,7 +371,7 @@ header{
     background-color: var(--CouleursCartesClair);
     padding: 30px;
     border: var(--CouleurBordureClair) 1px solid;
-    border-radius: 47px;
+    border-radius: 44px;
     display: flex;
     flex-direction: column;
     gap: var(--space-medium);
@@ -435,7 +433,7 @@ form{
     background-color: var(--CouleursCartesClair);
     padding: var(--space-large);
     border: var(--CouleurBordureClair) 1px solid;
-    border-radius: 47px;
+    border-radius: 27px;
     width: 70%;
 }
 
@@ -587,11 +585,13 @@ footer{
     }
     /* Skills */
     .skills-container{
-        display: flex;
-        justify-content: center;
+        display: grid;
+        /* justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1rem; */
+        grid-template-columns: 1fr 1fr;
+        gap : 1rem;
     }
     .skill {
         justify-content: center;
