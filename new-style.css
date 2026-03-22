@@ -1,0 +1,281 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+html,body,div,span,applet,button,input,select,textarea,object,iframe,h1,h2,h3,h4,h5,h6,hr,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,main,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    background: transparent;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    min-width: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+
+
+blockquote::before, blockquote::after, q::before,q::after {
+    content: none;
+}
+
+
+h1 {
+    font-family: 'Be Vietnam Pro' sans-serif;
+    font-weight: 700;
+    font-size: var(--font-size-xx-large);
+}
+
+
+h2 {
+    font-family: 'Be Vietnam Pro' sans-serif;
+    font-weight: 600;
+    font-size: var(--font-size-x-large);
+}
+
+
+h3 {
+    font-family: 'Be Vietnam Pro' sans-serif;
+    font-weight: 500;
+    font-size: var(--font-size-large);
+}
+
+
+h4 {
+    font-family: 'Be Vietnam Pro' sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-medium);
+}
+
+
+:root{
+    --BackgroundSombre: #0D1520;
+    --BackgroundClair: #FBFDFF;
+    --CouleurBouton: #0090FF;
+    --TexteBouton: #F4FAFF;
+    --CouleurBoutonTrensparent: rgba(142,200,246,0.16);
+    --TexteBoutonTrensparentClair: #113264;
+    --TexteBoutonTrensparentSombre: #C2E6FF;
+    --CouleursCartesSombre: #0D2847;
+    --CouleursCartesClair: #E6F4FE;
+    --CouleurBordureSombre: #205D9E;
+    --CouleurBordureClair: #8EC8F6;
+    --CouleyrBordureTransparent: rgba(255, 255, 255, 0.15);
+    --CouleurInputSombre: #0A1C31;
+    --CouleurInputClair: #F4FAFF;
+    --CouleurFooterClair: #E6F4FE;
+    --TextClair: #113264;
+    --TextSombre: #C2E6FF;
+
+    --space-neutral: 1.4em;
+    --space-xxx-small: 0.2em;
+    --space-x-small: 0.6em;
+    --space-small: 0.8em;
+    --space-medium: 1em;
+    --space-large: 2em;
+    --space-x-large: 3em;
+    --space-xx-large: 4em;
+    --space-xxx-large: 5em;
+    --font-family: 'Be Vietnam Pro', Sans-Serif;
+    --font-size-xxx-small: 45%;
+    --font-size-xx-small: 55;
+    --font-size-x-small: 62%;
+    --font-size-small: 80%;
+    --font-size-medium: 100%;
+    --font-size-large: 125%;
+    --font-size-x-large: 160%;
+    --font-size-xx-large: 200%;
+    --font-size-xxx-large: 260%;
+    --max-width-xxx-small: 35rem;
+    --max-width-xx-small: 45rem;
+    --max-width-x-small: 54rem;
+    --max-width-small: 65rem;
+    --max-width-medium: 90rem;
+    --max-width-large: 100rem;
+}
+
+
+body {
+    background-color: var(--BackgroundSombre);
+    color: var(--TextSombre);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: var(--space-large);
+}
+
+.blur-element{
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.0) 100%
+    );
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--CouleyrBordureTransparent);
+}
+
+.button-primary {
+    background : var(--CouleurBouton);
+    color: var(--TexteBouton);
+    border: none;
+    padding: var(--space-x-small) var(--space-medium);
+    border-radius: var(--space-x-small);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.button-secondary {
+    /* background : var(--CouleurBoutonTrensparent); */
+    color: var(--TexteBouton);
+    border: 1px solid var(--CouleurBouton);
+    padding: var(--space-x-small) var(--space-medium);
+    border-radius: var(--space-x-small);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 10em;
+}
+
+/*Hero Styles*/
+
+
+.hero-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: var(--space-large);
+    height: 90dvh;
+    margin-bottom: 0;
+}
+
+.hero-banner .cta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-medium);
+    margin: var(--space-xx-large) 0;
+}
+
+.hero-banner .title h1 {
+    font-size: 700%;
+}
+
+/*Technos Styles*/
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-large);
+}
+
+.technos {
+    display: flex;
+    gap: var(--space-medium);
+    /* flex-wrap: wrap; */
+    justify-content: center;
+
+}
+
+.techno-card {
+    width: 230px;
+    height: 230px;
+    border-radius: var(--space-x-small);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--space-neutral);
+}
+
+.techno-card h3 {
+    font-size: var(--font-size-xx-large);
+    font-weight: 700;
+    text-align: center;
+}
+
+.techno-card p {
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    text-align: center;
+}
+
+.techno-icon{
+    width: 80px;
+    height: 80px;
+    border: solid 2px var(--CouleyrBordureTransparent);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Projets Styles */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-large);
+}
+
+.projects h1 {
+    text-align: center;
+}
+
+.bento {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 230px;
+    gap: var(--space-medium);
+}
+
+.card {
+    border-radius: var(--space-x-small);
+    padding: var(--space-x-small);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.l-2 {
+    grid-column: span 2;
+}
+
+.l-3 {
+    grid-column: span 3;
+}
+
+.l-4 {
+    grid-column: span 4;
+}
+
+.h-2 {
+    grid-row: span 2;
+}
+
+.h-3 {
+    grid-row: span 3;
+}
+
+.h-4 {
+    grid-row: span 4;
+}
