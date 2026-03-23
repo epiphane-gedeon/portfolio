@@ -49,8 +49,11 @@ header {
 .menu li a:hover {
     color: var(--CouleurBouton);
     text-decoration: underline;
-}.menu li a:hover {
+}
+
+.menu li .active {
     color: var(--CouleurBouton);
+    text-decoration: underline;
 }
 
 .theme {

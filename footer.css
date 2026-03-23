@@ -10,3 +10,32 @@ footer{
 footer .logo {
     width: 200px;
 }
+
+.socials-links{
+    display: flex;
+    gap: var(--space-x-small);
+}
+
+.socials-links .icon{
+    width: 50px;
+}
+
+.footer-element{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-neutral);
+}
+
+.footer-element li{
+    margin-bottom: var(--space-x-small);
+    list-style: none;
+}
+
+.footer-element a {
+    /* text-decoration: none; */
+    color: var(--TextSombre);
+}
+
+.footer-element a:hover{
+    color: var(--CouleurBouton);
+}

@@ -65,7 +65,7 @@ h4 {
     --CouleursCartesClair: #E6F4FE;
     --CouleurBordureSombre: #205D9E;
     --CouleurBordureClair: #8EC8F6;
-    --CouleyrBordureTransparent: rgba(255, 255, 255, 0.15);
+    --CouleurBordureTransparent: rgba(255, 255, 255, 0.15);
     --CouleurInputSombre: #0A1C31;
     --CouleurInputClair: #F4FAFF;
     --CouleurFooterClair: #E6F4FE;
@@ -116,7 +116,7 @@ body {
     );
     backdrop-filter: blur(35px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--CouleyrBordureTransparent);
+    border: 1px solid var(--CouleurBordureTransparent);
 }
 
 .button-primary {
@@ -145,6 +145,10 @@ body {
 
 section {
     margin-bottom: 10em;
+}
+
+.icon path {
+    fill: var(--TextSombre);
 }
 
 /*Hero Styles*/
@@ -215,13 +219,17 @@ section {
 .techno-icon{
     width: 80px;
     height: 80px;
-    border: solid 2px var(--CouleyrBordureTransparent);
+    border: solid 2px var(--CouleurBordureTransparent);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.techno-icon .icon {
+    height: 50px;
+    width: 50px;
+}
 
 
 
