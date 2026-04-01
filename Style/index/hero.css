@@ -1,0 +1,114 @@
+/*Hero Styles*/
+
+
+.hero-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: var(--space-large);
+    height: 90dvh;
+    margin-bottom: 0;
+    /* padding: var(--space-medium); */
+}
+
+.hero-banner .cta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-medium);
+    margin: var(--space-xx-large) 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-banner .title h1 {
+    font-size: 700%;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.hero-banner .title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 80dvh;
+        gap: var(--space-medium);
+        /* padding: var(--space-small); */
+    }
+    
+    .hero-banner .title h1 {
+        font-size: 250%;
+    }
+    
+    .hero-banner .title h2 {
+        font-size: 1rem;
+    }
+    
+    .hero-banner .cta {
+        margin: var(--space-large) 0;
+        gap: var(--space-small);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner {
+        height: 70dvh;
+        gap: var(--space-small);
+        /* padding: var(--space-x-small); */
+    }
+    
+    .hero-banner .title h1 {
+        font-size: 200%;
+    }
+    
+    .hero-banner .title h2 {
+        font-size: 0.95rem;
+    }
+    
+    .hero-banner .cta {
+        flex-direction: column;
+        width: 100%;
+        max-width: 90vw;
+        margin: var(--space-medium) 0;
+        gap: var(--space-x-small);
+    }
+    
+    .hero-banner .cta a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+@media (max-width: 371px) {
+    .hero-banner .title h1 {
+        font-size: 170%;
+    }
+
+    .hero-banner .title h2 {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-banner {
+        height: 85dvh;
+        /* gap: var(--space-medium); */
+    }
+    
+    .hero-banner .title h1 {
+        font-size: 300%;
+    }
+    
+    .hero-banner .title h2 {
+        font-size: 1rem;
+    }
+}

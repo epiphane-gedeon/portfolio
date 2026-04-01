@@ -1,0 +1,72 @@
+/* Projets Styles */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-large);
+}
+
+.projects h1 {
+    text-align: center;
+}
+
+.bento {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 230px;
+    gap: var(--space-medium);
+}
+
+.card {
+    border-radius: var(--space-x-small);
+    padding: var(--space-x-small);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.l-2 {
+    grid-column: span 2;
+}
+
+.l-3 {
+    grid-column: span 3;
+}
+
+.l-4 {
+    grid-column: span 4;
+}
+
+.h-2 {
+    grid-row: span 2;
+}
+
+.h-3 {
+    grid-row: span 3;
+}
+
+.h-4 {
+    grid-row: span 4;
+}
+
+@media (max-width: 769px){
+    .bento {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .h-2 {
+        grid-row: span 1;
+    }
+
+    .h-4 {
+        grid-row: span 2;
+    }
+
+    .l-2, .l-3, .l-4 {
+        grid-column: span 2;
+    }
+}

@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="alternate" href="https://www.apple.com/fr/" hreflang="fr-FR">
     <link rel="alternate" href="https://www.apple.com/" hreflang="en-US">
+
+    <!--Stylesheets-->
     <link rel="stylesheet" href="new-style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/footer.css">
+    <link rel="stylesheet" href="Style/index/hero.css">
+    <link rel="stylesheet" href="Style/index/technos.css">
+    <link rel="stylesheet" href="Style/index/projects.css">
+
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png">
     <!--La police d'écriture-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Epiphane-Gédéon</title>
+
+    <script src="script.js"></script>
 </head>
 <body>
-    <header class="blur-element">
+    <header>
         <div class="logo">
             <a href=""><img src="Images/Ged.png", alt="Logo Epiphane-Gedeon"></a>
         </div>
@@ -26,8 +34,11 @@
             <div class="line"></div>
         </div>
         <nav class = "navbar" >
+            <div class="logo">
+                <a href=""><img src="Images/Ged.png", alt="Logo Epiphane-Gedeon"></a>
+            </div>
             <ul class="menu">
-                <li><a href="#" class="active">Accueil</a></li>
+                <li class="active"><a href="#">Accueil</a></li>
                 <li><a href="#">Blog</a></li> 
                 <li><a href="#">Projets</a></li>
                 <li><a href="#">Contact</a></li>
@@ -439,6 +450,7 @@
     hamburger.onclick= function(){
         navBar = document.querySelector('.navbar')
         navBar.classList.toggle('active')
+        hamburger.classList.toggle('cross')
        console.log('click')
     }
     if (localStorage.getItem('darkMode') === 'enabled') {
