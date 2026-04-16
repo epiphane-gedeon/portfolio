@@ -132,7 +132,6 @@ body {
 }
 
 .button-secondary {
-    /* background : var(--CouleurBoutonTrensparent); */
     color: var(--TexteBouton);
     border: 1px solid var(--CouleurBouton);
     padding: var(--space-x-small) var(--space-medium);
@@ -149,6 +148,11 @@ section {
 
 .icon path {
     fill: var(--TextSombre);
+}
+
+.icon.filled path {
+    stroke: var(--TextSombre);
+    fill: none;
 }
 
 /* main{

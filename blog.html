@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="new-style.css">
     <link rel="stylesheet" href="Style/header.css">
     <link rel="stylesheet" href="Style/footer.css">
-    <link rel="stylesheet" href="Style/blog.css">
+    <link rel="stylesheet" href="Style/blog/hero.css">
+    <link rel="stylesheet" href="Style/blog/featured-article.css">
+    <link rel="stylesheet" href="Style/blog/article.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png">
     <!--La police d'écriture-->
@@ -18,27 +20,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Blog - Epiphane-Gédéon</title>
-
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="Images/Ged.png" alt="Logo Epiphane-Gedeon"></a>
+            <a href=""><img src="Images/Ged.png", alt="Logo Epiphane-Gedeon"></a>
         </div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <nav class="navbar">
+        <nav class = "navbar" >
             <div class="logo">
-                <a href="index.html"><img src="Images/Ged.png" alt="Logo Epiphane-Gedeon"></a>
+                <a href=""><img src="Images/Ged.png", alt="Logo Epiphane-Gedeon"></a>
             </div>
             <ul class="menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li class="active"><a href="blog.html">Blog</a></li> 
-                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="#projects">Projets</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
@@ -60,7 +60,7 @@
         <section class="featured-article">
             <div class="featured-card blur-element">
                 <div class="featured-image">
-                    <div class="image-placeholder"></div>
+                    <img class="image-placeholder" src="./Images/ProjetPortfolio.png" alt="Featured Article">
                 </div>
                 <div class="featured-content">
                     <div class="article-meta">
@@ -74,7 +74,6 @@
             </div>
         </section>
 
-        <!-- Articles Grid -->
         <section class="articles-section">
             <div class="section-header">
                 <h2>Articles Récents</h2>
@@ -87,10 +86,9 @@
             </div>
 
             <div class="articles-grid">
-                <!-- Article Card 1 -->
                 <article class="article-card blur-element" data-category="tutorial">
                     <div class="article-image">
-                        <div class="image-placeholder"></div>
+                        <img class="image-placeholder" src="./Images/ProjetPortfolio.png" alt="Featured Article">
                         <span class="category-badge">Tutoriel</span>
                     </div>
                     <div class="article-details">
@@ -103,7 +101,6 @@
                     </div>
                 </article>
 
-                <!-- Article Card 2 -->
                 <article class="article-card blur-element" data-category="design">
                     <div class="article-image">
                         <div class="image-placeholder"></div>
@@ -119,7 +116,6 @@
                     </div>
                 </article>
 
-                <!-- Article Card 3 -->
                 <article class="article-card blur-element" data-category="backend">
                     <div class="article-image">
                         <div class="image-placeholder"></div>
@@ -135,7 +131,6 @@
                     </div>
                 </article>
 
-                <!-- Article Card 4 -->
                 <article class="article-card blur-element" data-category="tutorial">
                     <div class="article-image">
                         <div class="image-placeholder"></div>
@@ -151,7 +146,6 @@
                     </div>
                 </article>
 
-                <!-- Article Card 5 -->
                 <article class="article-card blur-element" data-category="design">
                     <div class="article-image">
                         <div class="image-placeholder"></div>
@@ -167,7 +161,6 @@
                     </div>
                 </article>
 
-                <!-- Article Card 6 -->
                 <article class="article-card blur-element" data-category="backend">
                     <div class="article-image">
                         <div class="image-placeholder"></div>
@@ -185,23 +178,54 @@
             </div>
         </section>
 
-        <!-- Pagination / Load More -->
         <section class="pagination-section">
             <button class="button-primary button-load-more">Charger plus d'articles</button>
+
+            <nav class="article-navigation">
+                <button class="nav-btn active blur-element">1</button>
+                <button class="nav-btn blur-element">2</button>
+                <button class="nav-btn blur-element">3</button>
+                <button class="nav-btn blur-element">4</button>
+                <button class="nav-btn blur-element">5</button>
+                <button class="nav-btn blur-element">6</button>
+                <button class="nav-btn blur-element">7</button>
+                <button class="nav-btn blur-element">8</button>
+                <button class="nav-btn blur-element">9</button>
+                <button class="nav-btn blur-element">10</button>
+                <button class="nav-btn blur-element">11</button>
+                <button class="nav-btn blur-element">12</button>
+                <button class="nav-btn blur-element">13</button>
+                <button class="nav-btn blur-element">14</button>
+                <button class="nav-btn blur-element">15</button>
+                <button class="nav-btn blur-element">16</button>
+                <button class="nav-btn blur-element">17</button>
+                <button class="nav-btn blur-element">18</button>
+                <button class="nav-btn blur-element">19</button>
+                <button class="nav-btn blur-element">20</button>
+                <button class="nav-btn blur-element">21</button>
+                <button class="nav-btn blur-element">22</button>
+                <button class="nav-btn blur-element">23</button>
+                <button class="nav-btn blur-element">24</button>
+                <button class="nav-btn blur-element">25</button>
+                <button class="nav-btn blur-element">26</button>
+                <button class="nav-btn blur-element">27</button>
+                <button class="nav-btn blur-element">28</button>
+                <button class="nav-btn blur-element">29</button>
+                <button class="nav-btn blur-element">30</button>
+            </nav>
         </section>
 
     </main>
-
     <footer class="blur-element">
         <div class="logo">
-            <a href="index.html"><img src="Images/Ged.png" alt="Logo Epiphane-Gedeon"></a>
+            <a href=""><img src="Images/Ged.png", alt="Logo Epiphane-Gedeon"></a>
         </div>
         <div class="links footer-element">
             <h3>Liens utiles</h3>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Projets</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
@@ -217,8 +241,21 @@
                 <a href="https://www.instagram.com/epiphane_gedeon" target="_blank">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50"><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg>
                 </a>
+                <a href="mailto:egpouli@epiphane-gedeon.com" target="_blank">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 14 6 L 36 6 C 40.430666 6 44 9.5693339 44 14 L 44 36 C 44 40.430666 40.430666 44 36 44 L 14 44 C 9.5693339 44 6 40.430666 6 36 L 6 14 C 6 9.5693339 9.5693339 6 14 6 z M 13 15 C 11.35503 15 10 16.35503 10 18 L 10 32 C 10 33.64497 11.35503 35 13 35 L 37 35 C 38.64497 35 40 33.64497 40 32 L 40 18 C 40 16.35503 38.64497 15 37 15 L 13 15 z M 13.414062 17 L 36.583984 17 L 27.677734 25.892578 C 26.18494 27.382984 23.796834 27.382819 22.304688 25.890625 L 13.414062 17 z M 38 18.412109 L 38 31.587891 L 31.402344 25 L 38 18.412109 z M 12 18.414062 L 18.585938 25 L 12 31.585938 L 12 18.414062 z M 29.988281 26.412109 L 36.585938 33 L 13.414062 33 L 20 26.414062 L 20.890625 27.304688 C 23.146478 29.56054 26.832638 29.562194 29.089844 27.308594 L 29.988281 26.412109 z"/></svg>
+                </a>
             </div>
+            
         </div>
+        <div class="legals footer-element">
+            <h3>Aspect légal</h3>
+            <ul>
+                <li><a href="">Politique de confidentialité</a></li>
+                <li><a href="">Conditions d'utilisation</a></li>
+            </ul>
+            <p>&copy; 2024 Epiphane-Gédéon. Tous droits réservés.</p>
+        </div>
+
     </footer>
 
     <script>
@@ -251,4 +288,5 @@
         });
     </script>
 </body>
+    <script src="header.js"></script>
 </html>

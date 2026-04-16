@@ -1,0 +1,24 @@
+/* Blog Hero Section */
+.blog-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50dvh;
+    text-align: center;
+    margin-bottom: var(--space-xx-large);
+    padding: var(--space-xx-large) var(--space-medium);
+}
+
+.blog-hero-content h1 {
+    font-size: 500%;
+    margin-bottom: var(--space-large);
+    line-height: 1.2;
+}
+
+.blog-hero-content p {
+    font-size: var(--font-size-x-large);
+    opacity: 0.8;
+    max-width: 60%;
+    margin: 0 auto;
+    color: var(--TextSombre);
+}
