@@ -209,9 +209,9 @@ a .icon {
         font-size: var(--font-size-medium);
     }
 
-    .contact-form textarea {
+    /* .contact-form textarea {
         rows: 8;
-    }
+    } */
 }
 
 /* Responsive Mobile (320px - 480px) */

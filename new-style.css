@@ -150,6 +150,11 @@ section {
     fill: var(--TextSombre);
 }
 
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
 .icon.filled path {
     stroke: var(--TextSombre);
     fill: none;

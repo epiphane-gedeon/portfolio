@@ -100,13 +100,13 @@
 .overlay {
     position: absolute;
     inset: 0;
-    /* background: rgba(0, 0, 0, 0.7); */
-    /* backdrop-filter: blur(10px); */
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    /* transition: opacity 0.3s ease; */
     border-radius: var(--space-x-small);
 }
 
@@ -131,10 +131,8 @@
 
 .overlay-content h3 {
     color: var(--CouleurBouton);
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
     margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .overlay-content a {
